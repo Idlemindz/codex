@@ -7,16 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="Codex is a community for learning, building, and sharing through technology.">
-    <title>Codex | Learn, Build, Connect</title>
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
+    <meta name="description" content="CodeX is a community for learning, building, and sharing through technology.">
+    <title>CodeX | Learn, Build, Connect</title>
 
     <style>
 
@@ -35,7 +27,7 @@
         }
 
         body {
-            font-family: "DM Sans", sans-serif;
+            font-family: "MTN Brighter Sans", "MTN Sans", Arial, sans-serif;
             color: #171717;
             background: #ffffff;
             line-height: 1.6;
@@ -625,15 +617,81 @@
             margin-bottom: 15px;
         }
 
-        .cta p {
+        .cta > .container > p:first-of-type {
             max-width: 650px;
             margin: 0 auto 30px;
+            color: rgba(255, 255, 255, 0.88);
+        }
+
+        .cta .join-form-note {
+            max-width: 620px;
+            margin: 18px auto 0;
             color: rgba(255, 255, 255, 0.88);
         }
 
         .cta .btn {
             background: white;
             color: #ff0000;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta .btn:hover,
+        .cta .btn:focus-visible {
+            background: #00ffff;
+            color: #171717;
+            transform: translateY(-2px);
+        }
+
+        .join-form {
+            width: min(100%, 620px);
+            margin: 40px auto 0;
+            padding: 30px;
+            display: grid;
+            gap: 18px;
+            text-align: left;
+            color: #171717;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .join-form label {
+            display: grid;
+            gap: 7px;
+            font-weight: 600;
+        }
+
+        .join-form input,
+        .join-form select {
+            width: 100%;
+            min-height: 46px;
+            padding: 10px 12px;
+            border: 1px solid #c9c9c9;
+            border-radius: 4px;
+            background: white;
+            color: #171717;
+            font: inherit;
+        }
+
+        .join-form input:focus,
+        .join-form select:focus {
+            outline: 2px solid #ff0000;
+            outline-offset: 2px;
+        }
+
+        .join-form .btn {
+            justify-self: start;
+        }
+
+        .join-form-status {
+            min-height: 1.6em;
+            margin: 0;
+            color: #444;
+        }
+
+        @media (max-width: 600px) {
+            .join-form {
+                padding: 22px;
+            }
         }
 
 
@@ -829,8 +887,8 @@
         <div class="container navbar">
 
             <a href="#" class="logo">
-                <img src="images/logo.jpg" alt="Codex Logo" class="my-logo">
-                <span>Codex</span>
+                <img src="images/logo.jpg" alt="CodeX Logo" class="my-logo">
+                <span>CodeX</span>
 
             </a>
 
@@ -887,7 +945,7 @@
             <div class="hero-text">
 
                 <div class="small-title">
-                    Welcome to Codex
+                    Welcome to CodeX
                 </div>
 
                 <h1>
@@ -896,7 +954,7 @@
                 </h1>
 
                 <p>
-                    Codex is a community for curious minds to explore technology,
+                    CodeX is a community for curious minds to explore technology,
                     create useful things, and grow together—one idea at a time.
                 </p>
 
@@ -999,7 +1057,7 @@
                 </h2>
 
                 <p>
-                    Codex brings people together to learn practical skills, experiment
+                    CodeX brings people together to learn practical skills, experiment
                     with ideas, and make technology more accessible to everyone.
                 </p>
 
@@ -1065,7 +1123,7 @@
                 </div>
 
                 <h2 class="section-title">
-                    What Codex is about
+                    What CodeX is about
                 </h2>
 
                 <p class="section-text">
@@ -1142,7 +1200,7 @@
                 </h2>
 
                 <p class="section-text">
-                    Explore the ways Codex helps people get started and keep growing.
+                    Explore the ways CodeX helps people get started and keep growing.
                 </p>
 
             </div>
@@ -1304,7 +1362,7 @@
                 </div>
 
                 <h2 class="section-title">
-                    Find your place at Codex
+                    Find your place at CodeX
                 </h2>
 
             </div>
@@ -1347,7 +1405,7 @@
                 <div class="testimonial">
 
                     <p>
-                        Have an idea for a project or session? Codex is a place to collaborate, experiment, and share what you discover.
+                        Have an idea for a project or session? CodeX is a place to collaborate, experiment, and share what you discover.
                     </p>
 
                     <div class="person">
@@ -1397,7 +1455,7 @@
                 </div>
 
                 <h2>
-                    Bring your ideas to Codex
+                    Bring your ideas to CodeX
                 </h2>
 
                 <p>
@@ -1415,7 +1473,7 @@
 
                 <img
                     src="images/program4.jpeg"
-                    alt="Codex members collaborating on a project"
+                    alt="CodeX members collaborating on a project"
                 >
 
             </div>
@@ -1458,7 +1516,7 @@
                     </h2>
 
                     <p>
-                        Help someone take their next step. Codex welcomes mentors and volunteers who want to encourage learning and share practical experience.
+                        Help someone take their next step. CodeX welcomes mentors and volunteers who want to encourage learning and share practical experience.
                     </p>
 
                     <a href="#" class="btn btn-primary">
@@ -1488,13 +1546,38 @@
             </h2>
 
             <p>
-                Join Codex and turn your curiosity into something you can share.
+                Join CodeX and turn your curiosity into something you can share.
             </p>
 
-            <a href="#" class="btn">
-                Join Us
-            </a>
+            <form class="join-form" id="joinForm">
+                <label for="joinName">
+                    Full name
+                    <input id="joinName" name="name" autocomplete="name" required>
+                </label>
 
+                <label for="joinEmail">
+                    Email address
+                    <input id="joinEmail" name="email" type="email" autocomplete="email" required>
+                </label>
+
+                <label for="joinInterest">
+                    How would you like to get involved?
+                    <select id="joinInterest" name="interest" required>
+                        <option value="">Select an option</option>
+                        <option value="learn">Learn and participate</option>
+                        <option value="mentor">Mentor others</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="partner">Partner with CodeX</option>
+                    </select>
+                </label>
+
+                <button type="submit" class="btn">Join Us</button>
+                <p class="join-form-status" id="joinFormStatus" role="status" aria-live="polite"></p>
+            </form>
+
+            <p class="join-form-note">
+                Fill this form and we shall reach out to you!
+            </p>
         </div>
 
     </section>
@@ -1518,7 +1601,7 @@
                 <div class="footer-brand">
 
                     <h2>
-                        Codex
+                        CodeX
                     </h2>
 
                     <p>
@@ -1650,7 +1733,7 @@
             <div class="footer-bottom">
 
                 <span>
-                    © 2026 Codex. All rights reserved.
+                    © 2026 CodeX. All rights reserved.
                 </span>
 
                 <span>
@@ -1666,6 +1749,14 @@
 
 
 
+
+    <script>
+        document.getElementById("joinForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            document.getElementById("joinFormStatus").textContent =
+                "Your details were not sent. Connect this form to a signup service to receive submissions.";
+        });
+    </script>
 
 </body>
 </html>
